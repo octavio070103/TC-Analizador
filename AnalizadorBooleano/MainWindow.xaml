@@ -19,7 +19,7 @@
 
         <!-- Texto del árbol -->
         <TextBox x:Name="txtResultado" Grid.Row="2" Text="Esperando una consulta para analizar..." FontStyle="Italic" Foreground="Gray" Margin="10" TextWrapping="Wrap" 
-                 AcceptsReturn="True" Height="120" VerticalScrollBarVisibility="Auto" FontSize="18" IsEnabled="False" />
+                 AcceptsReturn="True" Height="120" VerticalScrollBarVisibility="Auto" FontSize="18" IsReadOnly="True" />
 
         <!-- Imagen generada -->
         <ScrollViewer x:Name="scrollViewer" Grid.Row="3" Margin="0,10,0,97"
