@@ -1,0 +1,131 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnalizadorBooleano", "AnalizadorBooleano\AnalizadorBooleano.csproj", "{78333363-37D5-4883-9B85-9AAA4DBB270E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{BC6FF422-EF85-4D34-B770-1D621B5FD4F5}"
+	ProjectSection(SolutionItems) = preProject
+		AnalizadorBooleano\graphviz_bin\acyclic.exe = AnalizadorBooleano\graphviz_bin\acyclic.exe
+		AnalizadorBooleano\graphviz_bin\ANN.dll = AnalizadorBooleano\graphviz_bin\ANN.dll
+		AnalizadorBooleano\graphviz_bin\bcomps.exe = AnalizadorBooleano\graphviz_bin\bcomps.exe
+		AnalizadorBooleano\graphviz_bin\brotlicommon.dll = AnalizadorBooleano\graphviz_bin\brotlicommon.dll
+		AnalizadorBooleano\graphviz_bin\brotlidec.dll = AnalizadorBooleano\graphviz_bin\brotlidec.dll
+		AnalizadorBooleano\graphviz_bin\bz2.dll = AnalizadorBooleano\graphviz_bin\bz2.dll
+		AnalizadorBooleano\graphviz_bin\cairo-2.dll = AnalizadorBooleano\graphviz_bin\cairo-2.dll
+		AnalizadorBooleano\graphviz_bin\ccomps.exe = AnalizadorBooleano\graphviz_bin\ccomps.exe
+		AnalizadorBooleano\graphviz_bin\cdt.dll = AnalizadorBooleano\graphviz_bin\cdt.dll
+		AnalizadorBooleano\graphviz_bin\cgraph++.dll = AnalizadorBooleano\graphviz_bin\cgraph++.dll
+		AnalizadorBooleano\graphviz_bin\cgraph.dll = AnalizadorBooleano\graphviz_bin\cgraph.dll
+		AnalizadorBooleano\graphviz_bin\circo.exe = AnalizadorBooleano\graphviz_bin\circo.exe
+		AnalizadorBooleano\graphviz_bin\cluster.exe = AnalizadorBooleano\graphviz_bin\cluster.exe
+		AnalizadorBooleano\graphviz_bin\concrt140.dll = AnalizadorBooleano\graphviz_bin\concrt140.dll
+		AnalizadorBooleano\graphviz_bin\config8 = AnalizadorBooleano\graphviz_bin\config8
+		AnalizadorBooleano\graphviz_bin\diffimg.exe = AnalizadorBooleano\graphviz_bin\diffimg.exe
+		AnalizadorBooleano\graphviz_bin\dijkstra.exe = AnalizadorBooleano\graphviz_bin\dijkstra.exe
+		AnalizadorBooleano\graphviz_bin\dot.exe = AnalizadorBooleano\graphviz_bin\dot.exe
+		AnalizadorBooleano\graphviz_bin\dot2gxl.exe = AnalizadorBooleano\graphviz_bin\dot2gxl.exe
+		AnalizadorBooleano\graphviz_bin\dot_builtins.exe = AnalizadorBooleano\graphviz_bin\dot_builtins.exe
+		AnalizadorBooleano\graphviz_bin\dot_sandbox = AnalizadorBooleano\graphviz_bin\dot_sandbox
+		AnalizadorBooleano\graphviz_bin\edgepaint.exe = AnalizadorBooleano\graphviz_bin\edgepaint.exe
+		AnalizadorBooleano\graphviz_bin\fdp.exe = AnalizadorBooleano\graphviz_bin\fdp.exe
+		AnalizadorBooleano\graphviz_bin\ffi-8.dll = AnalizadorBooleano\graphviz_bin\ffi-8.dll
+		AnalizadorBooleano\graphviz_bin\fontconfig-1.dll = AnalizadorBooleano\graphviz_bin\fontconfig-1.dll
+		AnalizadorBooleano\graphviz_bin\freetype.dll = AnalizadorBooleano\graphviz_bin\freetype.dll
+		AnalizadorBooleano\graphviz_bin\fribidi-0.dll = AnalizadorBooleano\graphviz_bin\fribidi-0.dll
+		AnalizadorBooleano\graphviz_bin\gc.exe = AnalizadorBooleano\graphviz_bin\gc.exe
+		AnalizadorBooleano\graphviz_bin\gdtclft.dll = AnalizadorBooleano\graphviz_bin\gdtclft.dll
+		AnalizadorBooleano\graphviz_bin\getopt.dll = AnalizadorBooleano\graphviz_bin\getopt.dll
+		AnalizadorBooleano\graphviz_bin\gio-2.0-0.dll = AnalizadorBooleano\graphviz_bin\gio-2.0-0.dll
+		AnalizadorBooleano\graphviz_bin\glib-2.0-0.dll = AnalizadorBooleano\graphviz_bin\glib-2.0-0.dll
+		AnalizadorBooleano\graphviz_bin\gml2gv.exe = AnalizadorBooleano\graphviz_bin\gml2gv.exe
+		AnalizadorBooleano\graphviz_bin\gmodule-2.0-0.dll = AnalizadorBooleano\graphviz_bin\gmodule-2.0-0.dll
+		AnalizadorBooleano\graphviz_bin\gobject-2.0-0.dll = AnalizadorBooleano\graphviz_bin\gobject-2.0-0.dll
+		AnalizadorBooleano\graphviz_bin\graphml2gv.exe = AnalizadorBooleano\graphviz_bin\graphml2gv.exe
+		AnalizadorBooleano\graphviz_bin\gts.dll = AnalizadorBooleano\graphviz_bin\gts.dll
+		AnalizadorBooleano\graphviz_bin\gv2gml.exe = AnalizadorBooleano\graphviz_bin\gv2gml.exe
+		AnalizadorBooleano\graphviz_bin\gv2gxl.exe = AnalizadorBooleano\graphviz_bin\gv2gxl.exe
+		AnalizadorBooleano\graphviz_bin\gvc++.dll = AnalizadorBooleano\graphviz_bin\gvc++.dll
+		AnalizadorBooleano\graphviz_bin\gvc.dll = AnalizadorBooleano\graphviz_bin\gvc.dll
+		AnalizadorBooleano\graphviz_bin\gvcolor.exe = AnalizadorBooleano\graphviz_bin\gvcolor.exe
+		AnalizadorBooleano\graphviz_bin\gvgen.exe = AnalizadorBooleano\graphviz_bin\gvgen.exe
+		AnalizadorBooleano\graphviz_bin\gvmap.exe = AnalizadorBooleano\graphviz_bin\gvmap.exe
+		AnalizadorBooleano\graphviz_bin\gvmap.sh = AnalizadorBooleano\graphviz_bin\gvmap.sh
+		AnalizadorBooleano\graphviz_bin\gvpack.exe = AnalizadorBooleano\graphviz_bin\gvpack.exe
+		AnalizadorBooleano\graphviz_bin\gvplugin_core.dll = AnalizadorBooleano\graphviz_bin\gvplugin_core.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_dot_layout.dll = AnalizadorBooleano\graphviz_bin\gvplugin_dot_layout.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_gd.dll = AnalizadorBooleano\graphviz_bin\gvplugin_gd.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_gdiplus.dll = AnalizadorBooleano\graphviz_bin\gvplugin_gdiplus.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_kitty.dll = AnalizadorBooleano\graphviz_bin\gvplugin_kitty.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_neato_layout.dll = AnalizadorBooleano\graphviz_bin\gvplugin_neato_layout.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_pango.dll = AnalizadorBooleano\graphviz_bin\gvplugin_pango.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_vt.dll = AnalizadorBooleano\graphviz_bin\gvplugin_vt.dll
+		AnalizadorBooleano\graphviz_bin\gvplugin_webp.dll = AnalizadorBooleano\graphviz_bin\gvplugin_webp.dll
+		AnalizadorBooleano\graphviz_bin\gvpr.dll = AnalizadorBooleano\graphviz_bin\gvpr.dll
+		AnalizadorBooleano\graphviz_bin\gvpr.exe = AnalizadorBooleano\graphviz_bin\gvpr.exe
+		AnalizadorBooleano\graphviz_bin\gxl2dot.exe = AnalizadorBooleano\graphviz_bin\gxl2dot.exe
+		AnalizadorBooleano\graphviz_bin\gxl2gv.exe = AnalizadorBooleano\graphviz_bin\gxl2gv.exe
+		AnalizadorBooleano\graphviz_bin\harfbuzz.dll = AnalizadorBooleano\graphviz_bin\harfbuzz.dll
+		AnalizadorBooleano\graphviz_bin\iconv-2.dll = AnalizadorBooleano\graphviz_bin\iconv-2.dll
+		AnalizadorBooleano\graphviz_bin\intl-8.dll = AnalizadorBooleano\graphviz_bin\intl-8.dll
+		AnalizadorBooleano\graphviz_bin\jpeg62.dll = AnalizadorBooleano\graphviz_bin\jpeg62.dll
+		AnalizadorBooleano\graphviz_bin\libexpat.dll = AnalizadorBooleano\graphviz_bin\libexpat.dll
+		AnalizadorBooleano\graphviz_bin\libgd.dll = AnalizadorBooleano\graphviz_bin\libgd.dll
+		AnalizadorBooleano\graphviz_bin\liblzma.dll = AnalizadorBooleano\graphviz_bin\liblzma.dll
+		AnalizadorBooleano\graphviz_bin\libpng16.dll = AnalizadorBooleano\graphviz_bin\libpng16.dll
+		AnalizadorBooleano\graphviz_bin\libsharpyuv.dll = AnalizadorBooleano\graphviz_bin\libsharpyuv.dll
+		AnalizadorBooleano\graphviz_bin\libwebp.dll = AnalizadorBooleano\graphviz_bin\libwebp.dll
+		AnalizadorBooleano\graphviz_bin\mingle.exe = AnalizadorBooleano\graphviz_bin\mingle.exe
+		AnalizadorBooleano\graphviz_bin\mm2gv.exe = AnalizadorBooleano\graphviz_bin\mm2gv.exe
+		AnalizadorBooleano\graphviz_bin\msvcp140.dll = AnalizadorBooleano\graphviz_bin\msvcp140.dll
+		AnalizadorBooleano\graphviz_bin\msvcp140_1.dll = AnalizadorBooleano\graphviz_bin\msvcp140_1.dll
+		AnalizadorBooleano\graphviz_bin\msvcp140_2.dll = AnalizadorBooleano\graphviz_bin\msvcp140_2.dll
+		AnalizadorBooleano\graphviz_bin\msvcp140_atomic_wait.dll = AnalizadorBooleano\graphviz_bin\msvcp140_atomic_wait.dll
+		AnalizadorBooleano\graphviz_bin\msvcp140_codecvt_ids.dll = AnalizadorBooleano\graphviz_bin\msvcp140_codecvt_ids.dll
+		AnalizadorBooleano\graphviz_bin\neato.exe = AnalizadorBooleano\graphviz_bin\neato.exe
+		AnalizadorBooleano\graphviz_bin\nop.exe = AnalizadorBooleano\graphviz_bin\nop.exe
+		AnalizadorBooleano\graphviz_bin\osage.exe = AnalizadorBooleano\graphviz_bin\osage.exe
+		AnalizadorBooleano\graphviz_bin\pango-1.0-0.dll = AnalizadorBooleano\graphviz_bin\pango-1.0-0.dll
+		AnalizadorBooleano\graphviz_bin\pangocairo-1.0-0.dll = AnalizadorBooleano\graphviz_bin\pangocairo-1.0-0.dll
+		AnalizadorBooleano\graphviz_bin\pangoft2-1.0-0.dll = AnalizadorBooleano\graphviz_bin\pangoft2-1.0-0.dll
+		AnalizadorBooleano\graphviz_bin\pangowin32-1.0-0.dll = AnalizadorBooleano\graphviz_bin\pangowin32-1.0-0.dll
+		AnalizadorBooleano\graphviz_bin\patchwork.exe = AnalizadorBooleano\graphviz_bin\patchwork.exe
+		AnalizadorBooleano\graphviz_bin\pathplan.dll = AnalizadorBooleano\graphviz_bin\pathplan.dll
+		AnalizadorBooleano\graphviz_bin\pcre2-8.dll = AnalizadorBooleano\graphviz_bin\pcre2-8.dll
+		AnalizadorBooleano\graphviz_bin\pixman-1-0.dll = AnalizadorBooleano\graphviz_bin\pixman-1-0.dll
+		AnalizadorBooleano\graphviz_bin\prune.exe = AnalizadorBooleano\graphviz_bin\prune.exe
+		AnalizadorBooleano\graphviz_bin\sccmap.exe = AnalizadorBooleano\graphviz_bin\sccmap.exe
+		AnalizadorBooleano\graphviz_bin\sfdp.exe = AnalizadorBooleano\graphviz_bin\sfdp.exe
+		AnalizadorBooleano\graphviz_bin\tcl86t.dll = AnalizadorBooleano\graphviz_bin\tcl86t.dll
+		AnalizadorBooleano\graphviz_bin\tcldot.dll = AnalizadorBooleano\graphviz_bin\tcldot.dll
+		AnalizadorBooleano\graphviz_bin\tcldot_builtin.dll = AnalizadorBooleano\graphviz_bin\tcldot_builtin.dll
+		AnalizadorBooleano\graphviz_bin\tclplan.dll = AnalizadorBooleano\graphviz_bin\tclplan.dll
+		AnalizadorBooleano\graphviz_bin\tiff.dll = AnalizadorBooleano\graphviz_bin\tiff.dll
+		AnalizadorBooleano\graphviz_bin\tred.exe = AnalizadorBooleano\graphviz_bin\tred.exe
+		AnalizadorBooleano\graphviz_bin\twopi.exe = AnalizadorBooleano\graphviz_bin\twopi.exe
+		AnalizadorBooleano\graphviz_bin\unflatten.exe = AnalizadorBooleano\graphviz_bin\unflatten.exe
+		AnalizadorBooleano\graphviz_bin\vcruntime140.dll = AnalizadorBooleano\graphviz_bin\vcruntime140.dll
+		AnalizadorBooleano\graphviz_bin\vcruntime140_1.dll = AnalizadorBooleano\graphviz_bin\vcruntime140_1.dll
+		AnalizadorBooleano\graphviz_bin\xdot.dll = AnalizadorBooleano\graphviz_bin\xdot.dll
+		AnalizadorBooleano\graphviz_bin\zlib1.dll = AnalizadorBooleano\graphviz_bin\zlib1.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78333363-37D5-4883-9B85-9AAA4DBB270E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78333363-37D5-4883-9B85-9AAA4DBB270E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78333363-37D5-4883-9B85-9AAA4DBB270E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78333363-37D5-4883-9B85-9AAA4DBB270E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57E0BF93-30C1-427A-B46B-6B1BAAEF49A7}
+	EndGlobalSection
+EndGlobal
