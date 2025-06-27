@@ -5,6 +5,7 @@ using System.Text;
 
 namespace AnalizadorBooleano
 {
+    // GraphvizExporter: clase para exportar el árbol sintáctico a imagen usando Graphviz
     public static class GraphvizExporter
     {
         public static string ExportarComoImagen(Nodo raiz, string rutaBinDot, string rutaSalidaSinExtension)

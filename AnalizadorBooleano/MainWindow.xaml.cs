@@ -43,8 +43,10 @@ namespace AnalizadorBooleano
                 string basePath = Path.Combine(tempDir, "arbol_sintactico_" + uniqueId);
                 string rutaDot = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "graphviz_bin");
 
+                // Exportar el árbol a imagen usando Graphviz
                 string imagenPath = GraphvizExporter.ExportarComoImagen(nodo, rutaDot, basePath);
 
+                //cargar la imagen en el control Image
                 var bitmap = new BitmapImage();
                 bitmap.BeginInit();
                 bitmap.UriSource = new Uri(imagenPath);
@@ -64,7 +66,18 @@ namespace AnalizadorBooleano
                 txtResultado.Text = " Error: " + ex.Message;
             }
         }
+        // Evento para el botón de exportación
+        private void Exportar_Click(object sender, RoutedEventArgs e)
+        {
+            if (nodoActual == null || string.IsNullOrEmpty(imagenActualPath))
+            {
+                MessageBox.Show("Primero analiza una expresión antes de exportar.", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            ExportarResultado(nodoActual, expresionActual, nodoActual.Mostrar(), imagenActualPath);
+        }
 
+        // Método para exportar el resultado del análisis a un archivo ZIP
         private void ExportarResultado(Nodo raiz, string expresion, string resultadoJerarquico, string imagenPath)
         {
             var dialog = new Microsoft.Win32.SaveFileDialog
@@ -92,15 +105,6 @@ namespace AnalizadorBooleano
             }
         }
 
-        private void Exportar_Click(object sender, RoutedEventArgs e)
-        {
-            if (nodoActual == null || string.IsNullOrEmpty(imagenActualPath))
-            {
-                MessageBox.Show("Primero analiza una expresión antes de exportar.", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            ExportarResultado(nodoActual, expresionActual, nodoActual.Mostrar(), imagenActualPath);
-        }
 
         //eventos para manejo de texto en el TextBox
         private void txtEntrada_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)

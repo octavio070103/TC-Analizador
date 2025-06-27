@@ -10,21 +10,25 @@ namespace AnalizadorBooleano
         public static Nodo Parsear(string entrada)
         {
             var tokens = Lexer(entrada);
+            //crea un objeto interno que sabe leer tokens de a uno.
             var parser = new Parser(tokens);
-            // Iniciamos desde <CONSULTA>
+            // Iniciamos desde la regla principal y devuelve el nodo raiz <CONSULTA>
             var raiz = parser.Consulta();
-            // Verificamos que no queden tokens
+            // Verificamos que no queden tokens(no procesados) arrja un error si pasa algo inesperado
             if (parser.Actual() != null)
                 throw new SyntaxErrorException(
                     $"Token inesperado '{parser.Actual()}' en posición {parser.PosicionActual()}");
             return raiz;
         }
 
+        // Lexer: convierte la cadena de entrada en una lista ordenada de tokens
         static List<string> Lexer(string entrada)
         {
+            //Usamos una expresión regular para buscar y extraer tokens:
             var patron = "\"[^\"]*\"|&&|\\|\\||!|\\(|\\)|\\bAND\\b|\\bOR\\b|\\bNOT\\b|\\w+";
             var matches = Regex.Matches(entrada, patron, RegexOptions.IgnoreCase);
             var lista = new List<string>();
+            // Recorremos los matches y los agregamos a la lista de tokens
             foreach (Match m in matches)
             {
                 var t = m.Value;
@@ -37,15 +41,21 @@ namespace AnalizadorBooleano
             return lista;
         }
 
+        // Clase interna Parser:este objeto maneja la gramática y la construcción del árbol sintáctico
         class Parser
         {
+            // Lista de tokens del Lexer y posición actual 
             private readonly List<string> tokens;
             private int pos;
+            // Constructor: inicializa el parser con la lista de tokens y posición inicial
             public Parser(List<string> tokens) { this.tokens = tokens; pos = 0; }
 
+            // Método Actual: devuelve el token actual o null si se ha llegado al final de la lista
             public string Actual() => pos < tokens.Count ? tokens[pos] : null;
+            // Método PosicionActual: devuelve la posición actual en la lista de tokens
             public int PosicionActual() => pos < tokens.Count ? pos : tokens.Count;
 
+            // Método Coincidir: verifica que el token actual coincida con el esperado, avanza la posición si es correcto
             void Coincidir(string esperado)
             {
                 if (Actual() == esperado) pos++;
@@ -57,14 +67,14 @@ namespace AnalizadorBooleano
                 }
             }
 
-            // 1. <CONSULTA> ::= <EXP>
+            // REGLA DE GRAMATICA 1. <CONSULTA> ::= <EXP>
             public Nodo Consulta()
             {
                 var nodoExp = Exp();
                 return new Nodo("<CONSULTA>", null, new List<Nodo> { nodoExp });
             }
 
-            // 2–6. <EXP> ::= <EXP> AND <EXP> | <EXP> OR <EXP> | NOT <EXP> | ( <EXP> ) | <TERMINO>
+            // REGLA DE GRAMATICA 2–6. <EXP> ::= <EXP> AND <EXP> | <EXP> OR <EXP> | NOT <EXP> | ( <EXP> ) | <TERMINO>
             public Nodo Exp()
             {
                 // Empezamos con caso <TERMINO> o NOT o paréntesis
@@ -79,9 +89,10 @@ namespace AnalizadorBooleano
                         hijo
                     });
                 }
+                // 5. ( <EXP> )
                 else if (Actual() == "(")
                 {
-                    // 5. ( <EXP> )
+                    
                     Coincidir("(");
                     var sub = Exp();
                     Coincidir(")");
@@ -91,9 +102,10 @@ namespace AnalizadorBooleano
                         new Nodo(")", null)
                     });
                 }
+                // 6. <EXP> ::= <TERMINO>
                 else
                 {
-                    // 6. <EXP> ::= <TERMINO>
+                   
                     var termino = Termino();
                     nodo = new Nodo("<EXP>", null, new List<Nodo> { termino });
                 }
